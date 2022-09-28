@@ -1,0 +1,292 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("Imagenes/paisaje.jpg");  
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+header, a{
+    padding: 20px 10px;
+}
+
+.title{
+    text-align: center;
+    font-family: fantasy;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 80px;
+    color: goldenrod;
+}
+
+.btns-inicio
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-iniciar
+{
+    width: 317px;
+    height: 105px;
+    border-radius: 24px;
+    margin: 24px;
+    font-size: 18px;
+    color: black;
+    background-color: goldenrod;
+}
+
+.btn-iniciar:hover
+{
+    cursor: pointer;
+}
+
+.btn-agregar
+{
+    width: 317px;
+    height: 105px;
+    border-radius: 24px;
+    margin: 24px;
+    font-size: 18px;
+    color: black;
+    background-color: goldenrod;
+}
+
+.btn-agregar:hover
+{
+    cursor: pointer;
+}
+
+.palabra-nueva
+{
+    display: none;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo
+{
+    width: auto;
+    height: 512px;
+}
+
+.input-palabra-nueva
+{
+    width: 380px;
+    height: 68px;
+    margin-bottom: 363px;
+    border-radius: 10px;
+    font-size: 32px;
+    background-color: rgb(219, 190, 117);
+    color: black;
+    border: none;
+}
+
+.alerta
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.alerta img
+{
+    width: 16px;
+    margin-right: 10px;
+}
+
+.btn-guardar-empezar
+{
+    width: 332px;
+    height: 67px;
+    color: black;
+    border-radius: 24px;
+    background-color: goldenrod;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.btn-cancelar
+{
+    width: 332px;
+    height: 67px;
+    font-size: 18px;
+    color: black;
+    border-radius: 24px;
+    background-color: goldenrod;
+    border: 1px solid black;
+}
+
+.btn-cancelar:hover
+{
+    cursor: pointer;
+}
+
+.juego
+{
+    display: none;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dibujo
+{
+    width: 294px;
+    height: 360px;
+}
+
+.entrada-juego
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 464px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.letras
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 48px;
+    color: black;
+}
+
+.letra
+{
+    text-align: center;
+    width: 40px;
+}
+
+.lineas
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: goldenrod;
+}
+
+.linea
+{
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.letras-no
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 24px;
+    color: red;
+    opacity: 0.8;
+}
+
+.letra-no
+{
+    padding: 50px 10px;
+}
+
+.btns-juego
+{
+    display: inline-block;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+}
+
+.btn-nuevojuego
+{
+    width: 250px;
+    height: 80px;
+    border-radius: 24px;
+    margin: 24px;
+    font-size: 18px;
+    color: black;
+    background-color: goldenrod;
+}
+
+.btn-nuevojuego:hover
+{
+    cursor: pointer;
+}
+
+.btn-desistir
+{
+    width: 250px;
+    height: 80px;
+    border-radius: 24px;
+    margin: 24px;
+    font-size: 18px;
+    color: black;
+    background-color: goldenrod;
+}
+
+.btn-desistir:hover
+{
+    cursor: pointer;
+}
+
+.mensaje
+{
+    margin: 20px;
+    font-size: 24px;
+}
+
+.responsive
+{
+    display: none;
+}
+
+.programador{
+    text-align: left;
+    text-decoration: solid;
+    font-style: italic;
+    font-size: 25px;
+}
+
+@media (max-width: 800px) {
+    .responsive
+    {
+        display: inline-block;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .btn-letra
+    {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 2px;
+    }
+}
